@@ -1,0 +1,11 @@
+body {
+    margin: 20px;
+	background-color: #eaf4f4;
+}
+.posts-container {
+display: grid;
+align-content: start;
+grid-template-columns: auto auto;
+gap: 20px;
+}
+
