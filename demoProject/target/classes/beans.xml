@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="myEngine" class="com.zareen.demoProject.service.ElectricalEngine">
+    </bean>
+
+<!-- constructor injection -->
+<!--  <bean id="myVehicle" class="com.zareen.demoProject.consumer.Car">-->
+<!--      <constructor-arg ref="myEngine" />-->
+<!--    </bean>-->
+    
+   <!-- setter injection -->
+    <bean id="myBike" class="com.zareen.demoProject.consumer.Bike">
+      <property name="engine" ref="myEngine"/>
+      </bean>
+
+ </beans>
